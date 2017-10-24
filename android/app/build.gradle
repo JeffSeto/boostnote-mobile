@@ -138,6 +138,7 @@ android {
 }
 
 dependencies {
+    compile project(':taplytics-react-native')
     compile project(':react-native-code-push')
     compile project(':react-native-fetch-blob')
     compile fileTree(dir: "libs", include: ["*.jar"])

@@ -3,6 +3,7 @@ package com.boostnotemobile;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.taplytics.react.TaplyticsReactPackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -30,6 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new TaplyticsReactPackage(),
           new RNFetchBlobPackage(),
           new CodePush("byLfL38UaCCfKxo_2kTLHuR190e81a2d16b3-a6fd-494f-8deb-050bb34a68be", MainApplication.this, BuildConfig.DEBUG)
       );
